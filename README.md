@@ -1,17 +1,24 @@
-# pacman_game
+#  Pac-Man Flutter
 
-A new Flutter project.
+Juego estilo Pac-Man hecho con **Flutter** y **CustomPainter**.
 
-## Getting Started
+## Características
+- Mapa de 15x9 celdas con paredes, puntos (10 pts) y power pellets (50 pts)
+- Controles con las flechas del teclado o deslizando el dedo
+- Pac-Man cambia de color cada 100 puntos
+- Pierdes si chocas con una pared; ganas al comer todos los puntos
+- Botón de reinicio y diálogos de victoria/derrota
+- Multiplataforma: Web, Android, iOS, Windows, macOS y Linux
 
-This project is a starting point for a Flutter application.
+## Cómo ejecutarlo
+    git clone https://github.com/TU_USUARIO/pacman-flutter.git
+    cd pacman-flutter
+    flutter pub get
+    flutter run -d chrome
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Estructura
+- `lib/main.dart`: punto de entrada
+- `lib/game_screen.dart`: lógica del juego y controles
+- `lib/game_painter.dart`: dibujo del mapa y Pac-Man
+- `lib/game_map.dart`: diseño del mapa y colisiones
+- `lib/constants.dart`: colores, velocidad y puntajes
